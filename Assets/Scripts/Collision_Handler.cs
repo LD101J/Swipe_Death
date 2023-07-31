@@ -13,7 +13,7 @@ public class Collision_Handler : MonoBehaviour
             case "Death":
                 Debug.Log(this.name + "Collided with :" + other.gameObject.name);
                 Destroy(other.gameObject);
-                Reload_Level();
+                Health_Bar_Update();
                 //Destroy(gameObject);
                 break;
             case "Finish":             
@@ -27,6 +27,11 @@ public class Collision_Handler : MonoBehaviour
                 
                 break;
         }    
+    }
+
+    private void Health_Bar_Update()
+    {
+        
     }
 
     private void Reload_Level()
