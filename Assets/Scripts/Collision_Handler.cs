@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Collision_Handler : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         switch (other.gameObject.tag)
         {
@@ -16,7 +16,7 @@ public class Collision_Handler : MonoBehaviour
                 Health_Bar_Update();
                 //Destroy(gameObject);
                 break;
-            case "Finish":             
+            case "Finish":
                 Debug.Log("You have Finished");
                 Reload_Level();
                 break;
@@ -24,10 +24,10 @@ public class Collision_Handler : MonoBehaviour
                 Debug.Log("Pickup");
                 break;
             default:
-                
+
                 break;
-        }    
-    }
+        }
+    }   
 
     private void Health_Bar_Update()
     {

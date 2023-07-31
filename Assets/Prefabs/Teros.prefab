@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 541610733178797665}
   - component: {fileID: 543450653008572569}
   - component: {fileID: 6695878353182087639}
+  - component: {fileID: 1026308844254121041}
   m_Layer: 0
   m_Name: Teros
   m_TagString: Untagged
@@ -348,6 +349,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1026308844254121041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3230902772877064081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c48a221fa1cd1f49a9042b1a6dc34c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hit_Points: 5
+  max_Hit_Points: 10
 --- !u!1 &8320149798605991606
 GameObject:
   m_ObjectHideFlags: 0
