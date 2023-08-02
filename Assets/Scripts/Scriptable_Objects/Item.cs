@@ -6,7 +6,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public string object_Name;
-    public Sprite sprite;
+    public Mesh mesh;
     public int quantity;
     public bool stackable;
     public enum Item_Type

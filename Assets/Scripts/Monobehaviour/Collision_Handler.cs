@@ -12,7 +12,7 @@ public class Collision_Handler : MonoBehaviour
         {
             case "Death":
                 Debug.Log(this.name + "Collided with :" + other.gameObject.name);
-                Destroy(other.gameObject);
+                Destroy(gameObject);
                 Health_Bar_Update();
                 //Destroy(gameObject);
                 break;

@@ -17,6 +17,7 @@ public class Player : Character
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
+            other.gameObject.SetActive(false);
             Item hit_Object = other.gameObject.GetComponent<Consumable>().item;
             if(hit_Object != null)
             {
